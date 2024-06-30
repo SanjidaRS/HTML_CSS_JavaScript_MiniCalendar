@@ -43,9 +43,7 @@ Defines the appearance of the calendar container and its elements for a polished
 JavaScript Code Overview:
 
 Fetches the current date using the Date object.
-
 Updates the HTML elements with the current date, day, month, and year.
-
 Ensures leading zeros for single-digit dates for a consistent format.
 
 How to Customize
