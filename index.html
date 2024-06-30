@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html>
+    <head> <!-- Metadata and links to external resources -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport for responsive design -->
+        <title>Mini Calendar Using JavaScript</title> <!-- Title of the document -->
+        <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    </head>
+    <body> <!-- Body of the HTML document -->
+        <!-- Hero section containing the calendar -->
+        <div class="hero">
+            <!-- Calendar container -->
+            <div class="calendar">
+                <!-- Left side of the calendar showing the date and day -->
+                <div class="left">
+                    <p id="date">01</p> <!-- Placeholder for the current date -->
+                    <p id="day">Monday</p> <!-- Placeholder for the current day -->
+                </div>
+                <!-- Right side of the calendar showing the month and year -->
+                <div class="right">
+                    <p id="month">July</p> <!-- Placeholder for the current month -->
+                    <p id="year">2024</p> <!-- Placeholder for the current year -->
+                </div>
+            </div>
+        </div>
+        <!-- JavaScript for dynamically updating the calendar -->
+        <script>
+            // Get references to the HTML elements
+            const date = document.getElementById("date");
+            const day = document.getElementById("day");
+            const month = document.getElementById("month");
+            const year = document.getElementById("year");
+
+            // Get the current date
+            const today = new Date();
+            // Arrays for week days and months
+            const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const allMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+            // Log the current date for debugging purposes
+            console.log(today);
+
+            // Update the HTML elements with the current date information
+            date.innerHTML = (today.getDate() < 10 ? "0" : "") + today.getDate();
+            day.innerHTML = weekDays[today.getDay()];
+            month.innerHTML = allMonths[today.getMonth()];
+            year.innerHTML = today.getFullYear();
+        </script>
+    </body>
+</html>
+
