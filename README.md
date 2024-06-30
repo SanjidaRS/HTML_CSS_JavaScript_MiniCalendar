@@ -39,6 +39,7 @@ Includes JavaScript to dynamically update these placeholders with the current da
 
 CSS Code Overview:
 
+
 Resets default margin and padding, sets the font, and applies a box-sizing rule.
 
 Styles the hero section to center the calendar and provide a gradient background.
@@ -48,6 +49,7 @@ Defines the appearance of the calendar container and its elements for a polished
 
 JavaScript Code Overview:
 
+
 Fetches the current date using the Date object.
 
 Updates the HTML elements with the current date, day, month, and year.
@@ -56,6 +58,7 @@ Ensures leading zeros for single-digit dates for a consistent format.
 
 
 How to Customize
+
 Update the CSS in style.css to change the appearance.
 Modify the JavaScript in index.html to add additional functionality or format the date differently.
 
